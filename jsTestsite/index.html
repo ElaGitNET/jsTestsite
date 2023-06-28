@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="content.js"></script>
+        <title>JS Test Site</title>
+    </head>
+    <header>
+      <nav class="navbar bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">JS Test</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <style>
+      body {background-color: powderblue;}
+    </style>
+
+    <body>
+      <div>
+        a
+      </div>
+      <div>
+        a
+      </div>
+      <div>
+        ㅤ
+      </div>    
+      <div class="centered">
+        <h2>Each card has a button. They do different things with js!</h2>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card" style="border-color: black; width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Alert box</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Will pop up an alert box</h6>
+              <p class="card-text">To close the box just click ok</p>
+              <button onclick="al()">Try it</button>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card" style="border-color: black; width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title" id="colour3">Change text colour</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary" id="colour2">This will change the text colour</h6>
+              <p class="card-text" id = "colour">font text</p>
+              <button onclick="font()">Change!</button>"
+            </div>
+        </div>
+      </div>
+
+      <div class = "centered">
+        <h4>Click the button below to add text to the box!</h4>
+      </div>
+      <div class = "centered">
+        <button onclick="txtLoop()">Add text!</button>
+      </div>
+      <div class = "centered">
+        <div class="card" style="border-color: black; width: 18rem;">
+          <div class="card-body">
+            <h5> Text will be here! </h5>
+            <p class="card-text" id = "txtLoop">#</p>
+          </div>
+        </div>
+      </div>
+      <footer id="sticky-footer" class="py-3 bg-dark text-white-50 fixed-bottom">
+        <div class="container text-center">
+          <small>JavaScipt</small>
+        </div>
+      </footer>
+    </body>
